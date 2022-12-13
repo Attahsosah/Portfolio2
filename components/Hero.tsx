@@ -9,7 +9,7 @@ function Hero({}: Props) {
     words:["Hi",
             "The Name's Attah",
             "Attah Sosah",
-            "Guy-who-loves-Coffee.tsx",
+            "Guy-who-loves-Coffee",
             "<ButLovesToCodeMore />"
           ],
           loop:true,
@@ -28,7 +28,7 @@ function Hero({}: Props) {
       <div className='z-20'>
         <h2 className='text-sm uppercase text-gray-500 pb-2 tracking-[15px]'>Software Engineer</h2>
       <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
-        <span className='mr-3'>{text}</span>
+        <span className='mr-3 text-yellow-800'>{text}</span>
         <Cursor cursorColor='#F7AB8A' />
         
         </h1>
