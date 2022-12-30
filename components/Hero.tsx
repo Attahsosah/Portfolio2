@@ -2,6 +2,8 @@ import Link from 'next/link';
 import React from 'react'
 import {Cursor, useTypewriter} from 'react-simple-typewriter';
 import BackgroundCircles from './BackgroundCircles';
+import { motion } from 'framer-motion';
+
 type Props = {}
 
 function Hero({}: Props) {
@@ -20,7 +22,29 @@ function Hero({}: Props) {
     //  
     <div className=' h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden '>
       <BackgroundCircles />
-      <img 
+      <motion.img 
+       initial={{
+        opacity:0.5,
+        
+        scale:0.5
+
+      }}
+      animate={{
+        x:[15,15,15,15,15,15,15,15,15,15,15,15,15,500,15],
+        opacity:1,
+        scale: 3,
+        rotate:[100,160,200,260,300,360,400,390,380,360],
+      }}
+      whileInView={{
+        opacity:1,
+        scale:1
+
+      }}
+      transition={{
+        
+        duration: 2.5
+      }}
+      
       className='relative rounded-full h-32 w-32 mx-auto object-cover'
        src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHpMlcgNRldPhvxO6PQatDPekVroEPNMWK6PZuwpQBfN84QAKtv8liXZ8eKICnGMSr80s&usqp=CAU' alt="Profile"
         />
@@ -32,14 +56,34 @@ function Hero({}: Props) {
         <Cursor cursorColor='#F7AB8A' />
         
         </h1>
-        <div className='pt-5 '>
+        <motion.div 
+         initial={{
+          opacity:0.5,
+         
+          scale:3
+
+        }}
+        whileInView={{
+          opacity:1,
+          scale:1
+
+        }}
+        transition={{
+          duration: 2.5
+
+        }}
+        
+        className='pt-5 '>
           <Link href="#about">
-           <button className='heroButton'>About</button>
+           <button 
+           
+           
+           className='heroButton'>About</button>
           </Link>
           
-          <Link href="#experience">
+          {/* <Link href="#experience">
             <button className='heroButton'>Experience</button>
-          </Link>
+          </Link> */}
           <Link href="#skills">
            <button className='heroButton'>Skills</button>
           </Link>
@@ -50,7 +94,7 @@ function Hero({}: Props) {
          
          
           
-        </div>
+        </motion.div>
       </div>
       
       </div>

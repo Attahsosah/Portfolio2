@@ -11,7 +11,27 @@ function About({}: Props) {
         transition={{duration:1.5}}
 
       className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center'>
-        <h3 className='absolute top-0 uppercase tracking-[20px] text-gray-500 text-2xl'>About</h3>
+        <motion.h3
+        initial={{
+          opacity:0.5,
+          x:100,
+          scale:0.5
+
+        }}
+        whileInView={{
+          opacity:1,
+          scale:1
+
+        }}
+        transition={{
+          duration: 1
+
+        }}
+        
+        className='absolute top-7 uppercase tracking-[20px] text-gray-500 text-2xl'
+         
+         >About
+         </motion.h3>
         <motion.img
         initial={{
              x:-200,
@@ -34,7 +54,7 @@ function About({}: Props) {
             <h4 className='text-4xl font-semibold'>
             Here is a <span className='underline decoration-[#F7AB0A]/50'>little</span>{" "} background  
             </h4>
-            <p className='text-base'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+            <p className='text-base'>Hi there! My name is Attah Sosah. Since the age of 13 , I have been obsessed with programming. Over the years, I have explored the different areas of programming. I am currently a full stack web developer . In most cases I work on web apps.  </p>
         </div>
     </motion.div>
   )
