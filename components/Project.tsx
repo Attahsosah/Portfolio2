@@ -11,10 +11,10 @@ type Props = {
 }
 
 function Project({image,title,link,description,number}: Props) {
-    const projects = [1,2,3,4,5]
+    const projects = [1,2]
   return (
     <div>
-        {projects.map((i) => (
+        {projects.map((key,i) => (
                 <div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen'> 
                     <motion.img 
                     className='max-h-56 max-w-56'
