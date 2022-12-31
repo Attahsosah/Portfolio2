@@ -43,7 +43,9 @@ function Hero({}: Props) {
       transition={{
         
         duration: 2.5
+        
       }}
+      viewport={{once:true}}
       
       className='relative rounded-full h-32 w-32 mx-auto object-cover'
        src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHpMlcgNRldPhvxO6PQatDPekVroEPNMWK6PZuwpQBfN84QAKtv8liXZ8eKICnGMSr80s&usqp=CAU' alt="Profile"
