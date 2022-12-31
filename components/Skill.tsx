@@ -21,7 +21,7 @@ function Skill({directionLeft, image, proficiency}: Props) {
             transition={{ duration:1}}
             whileInView={{ opacity:1, x:0}}
             src={image}
-            className='rounded-full border border-gray-500 object-cover h-24 w-24 md:w-28 md:h-28  xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out'
+            className='rounded-full sm:top-0   border border-gray-500 object-cover h-24 w-24 md:w-28 md:h-28  xl:w-32 xl:h-32 filter group-hover:grayscale transition duration-300 ease-in-out'
         
         
         />

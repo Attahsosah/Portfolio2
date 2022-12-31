@@ -21,12 +21,12 @@ function ContactMe({}: Props) {
     };
 
   return (
-    <div className='h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center top-20'>
+    <div className='h-screen   flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center top-20'>
          <h3 className='absolute top-0 uppercase tracking-[20px] text-gray-500 text-2xl pt-4'>Contact</h3>
          <div className='flex flex-col space-y-10'>
             <h4 className='text-4xl font-semibold text-center'>
                 I am here to help.
-                <span className='decoration-[#F7AB0A]/50 underline'>Send  me a message </span>
+                <span className=' decoration-[#F7AB0A]/50 underline '>Send  me a message </span>
             </h4>
 
             <div className='space-y-10'>
@@ -41,7 +41,7 @@ function ContactMe({}: Props) {
             <div>
                 <div className='flex items-center space-x-5 justify-center'>
                   <EnvelopeIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse'/>
-                  <p className='text-2xl tracking-[10px]'>sosahattah55@gmail.com</p>
+                  <p className=' text-lg md:text-2xl tracking-[10px] '>sosahattah55@gmail.com</p>
 
                 </div>
                 

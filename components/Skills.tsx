@@ -34,7 +34,7 @@ function Skills({}: Props) {
 
        
         
-        className='absolute top-0 uppercase tracking-[20px] text-gray-500 text-2xl'>Skills</motion.h3>
+        className='absolute top-0 uppercase tracking-[20px] text-gray-500 text-2xl pr-32'>Skills</motion.h3>
 
         <h3 className='absolute top-11 uppercase tracking-[3px]   text-gray-500 text-sm'>
             Hover over a skill for current proficiency
