@@ -9,7 +9,7 @@ type Props = {
 }
 
 function Projects({ }: Props) {
-    const projects = [1,2,3,4,5]
+    const projects = [1,2]
     
   return (
     <motion.div 
