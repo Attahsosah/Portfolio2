@@ -34,7 +34,7 @@ function Project({image,title,link,description,number}: Props) {
                     />
 
                     <div className='space-y-10 px-0 md:px-10 max-w-6xl'> 
-                       <a href="https://ordering-app-lemon.vercel.app"> <h4  className='text-4xl font-semibold text-center'>
+                       <a href={link}> <h4  className='text-4xl font-semibold text-center'>
                            
                            {title}</h4>
                             </a>
