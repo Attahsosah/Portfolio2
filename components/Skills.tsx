@@ -30,7 +30,7 @@ function Skills({}: Props) {
           duration: 1
 
         }}
-
+        
 
        
         
