@@ -52,7 +52,7 @@ function Projects({ }: Props) {
             
             <Project image="https://cdn.discordapp.com/attachments/800718490750418967/1094972512414224454/Screen_Shot_2023-04-10_at_3.07.37_PM.png" link='https://dashboard-sooty-six.vercel.app'  title='Dashboard' description=''/>
 
-            <Project image="https://cdn.discordapp.com/attachments/800718490750418967/1134118604644827226/Screen_Shot_2023-07-27_at_3.35.04_PM.png" link='https://dashboard-sooty-six.vercel.app'  title='Tour site Clone' description='A clone of the front end of a tour  site '/>
+            <Project image="https://cdn.discordapp.com/attachments/800718490750418967/1134118604644827226/Screen_Shot_2023-07-27_at_3.35.04_PM.png" link='https://tour-site-six.vercel.app'  title='Tour site Clone' description='A clone of the front end of a tour  site '/>
 
 
            
