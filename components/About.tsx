@@ -54,7 +54,7 @@ function About({}: Props) {
             <h4 className='text-4xl font-semibold'>
             Here is a <span className='underline decoration-[#F7AB0A]/50'>little</span>{" "} background  
             </h4>
-            <p className='text-base'>Hi there! My name is Attah Sosah. Since the age of 13 , I have been obsessed with programming. Over the years, I have explored the different areas of programming. I am currently a full stack web developer . In most cases I work on web apps.  </p>
+            <p className='text-base'>Hi there! My name is Attah Sosah. Since the age of 13 , I have been obsessed with programming. Over the years, I have explored the different areas of programming. I am currently a full stack web developer . In most cases I work on web apps. I welcome you to my portfolio website </p>
         </div>
     </motion.div>
   )
