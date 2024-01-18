@@ -22,7 +22,7 @@ function ContactMe({}: Props) {
 
   return (
     <div className='h-screen   flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center top-20'>
-         <h3 className='absolute top-0 uppercase tracking-[20px] text-gray-500 text-2xl pt-4'>Contact</h3>
+         <h3 className='absolute top-0 uppercase tracking-[20px] text-[#2b4970] text-2xl pt-4'>Contact</h3>
          <div className='flex flex-col space-y-10'>
             <h4 className='text-4xl font-semibold text-center'>
                 I am here to help.
@@ -40,7 +40,7 @@ function ContactMe({}: Props) {
             </div>
             <div>
                 <div className='flex items-center space-x-5 justify-center'>
-                  <EnvelopeIcon className='text-[#F7AB0A] h-7 w-7 animate-pulse'/>
+                  <EnvelopeIcon className='text-[#2b4970] h-7 w-7 animate-pulse'/>
                   <p className=' text-lg md:text-2xl tracking-[10px] '>sosahattah55@gmail.com</p>
 
                 </div>
@@ -54,7 +54,7 @@ function ContactMe({}: Props) {
                 </div>
                 <input {...register('subject')} placeholder="Subject" className='contactInput'  type="text" />
                 <textarea {...register('message')} placeholder="Message"  className='contactInput'></textarea>
-                <button type='submit' className='bg-[#F7AB0A] py-5 px-10 rounded-md text-[#000000] font-bold text-lg hover:text-black'>
+                <button type='submit' className='bg-[#2b4970] hover:bg-[#213958] transition transform duration-2000 ease-in-out py-5 px-10 rounded-md text-[#000000] font-bold text-lg hover:text-black'>
                     Submit
                     </button>
 

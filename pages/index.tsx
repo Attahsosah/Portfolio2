@@ -11,7 +11,7 @@ import WorkExperience from '../components/WorkExperience'
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-[rgb(36,36,38)] text-white h-screen snap-y snap-mandatory overflow-scroll  z-0 overflow-y-scroll overflow-x-hidden scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-[#F7AB0A]/80 '>
+    <div className='bg-[rgb(31,31,35)] text-white h-screen snap-y snap-mandatory overflow-scroll  z-0 overflow-y-scroll overflow-x-hidden scrollbar-thin scrollbar-track-[rgb(31,31,35)]  scrollbar-thumb-[#2b4970]  '>
       <Head>
         <title>Portfolio</title>
         

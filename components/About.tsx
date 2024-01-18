@@ -28,7 +28,7 @@ function About({}: Props) {
 
         }}
         
-        className='absolute top-7 uppercase tracking-[20px] text-gray-500 text-2xl'
+        className='absolute top-7 uppercase tracking-[20px] text-[#2b4970] text-2xl'
          
          >About
          </motion.h3>

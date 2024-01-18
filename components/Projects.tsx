@@ -39,7 +39,7 @@ function Projects({ }: Props) {
         }}
         
         
-        className='absolute top-0 uppercase tracking-[20px] text-gray-500  pr-32 pl-0
+        className='absolute top-0 uppercase tracking-[20px] text-[#2b4970]  pr-32 pl-0
         text-2xl'>
             Projects
         </motion.h3>
