@@ -48,7 +48,6 @@ function Projects({ }: Props) {
         
             <Project link='https://ordering-app-lemon.vercel.app/#offer' image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiC6fhWPvVa8NSDszxTkw_K2oti5raqeeP0w&usqp=CAU' title='Food Ordering App' description='This Food ordering app is a beautifully designed and customisable application where 
                                 a superuser who is logged in can add and delete items.It makes use of a firebase backend to store the food information.' />
-            <Project image='https://i.ibb.co/TKVbvsG/Screen-Shot-2022-12-01-at-1-57-06-PM.png'link='https://airbnb-yt.vercel.app' title='AirBnB Clone' description='A close clone of the Airbnb website containing the same sleek design, animated text , search functionality and a map feature'/>
             
             <Project image="https://cdn.discordapp.com/attachments/800718490750418967/1094972512414224454/Screen_Shot_2023-04-10_at_3.07.37_PM.png" link='https://dashboard-sooty-six.vercel.app'  title='Dashboard' description=''/>
 
