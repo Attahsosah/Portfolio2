@@ -51,7 +51,7 @@ function Projects({ }: Props) {
             <Project link='https://ordering-app-lemon.vercel.app/#offer' image='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiC6fhWPvVa8NSDszxTkw_K2oti5raqeeP0w&usqp=CAU' title='Food Ordering App' description='This Food ordering app is a beautifully designed and customisable application where 
                                 a superuser who is logged in can add and delete items.It makes use of a firebase backend to store the food information.' />
             
-            <Project image="https://cdn.discordapp.com/attachments/800718490750418967/1094972512414224454/Screen_Shot_2023-04-10_at_3.07.37_PM.png?ex=669f02de&is=669db15e&hm=242a1680d8dac728a1035633061a1093e4370daa4b9ee94d9475e2830cbfc3d2&" link='https://dashboard-sooty-six.vercel.app'  title='Dashboard' description='A dashboard example project with a dashboard that displays statistics and much more information'/>
+            <Project image="https://cdn.discordapp.com/attachments/800718490750418967/1094972512414224454/Screen_Shot_2023-04-10_at_3.07.37_PM.png?ex=669f02de&is=669db15e&hm=242a1680d8dac728a1035633061a1093e4370daa4b9ee94d9475e2830cbfc3d2&" link='https://dashboard-sooty-six.vercel.app'  title='Dashboard' description='A dashboard example project with a dashboard that displays statistics, various different metrics,customers  and much more information'/>
 
             <Project image="https://cdn.discordapp.com/attachments/800718490750418967/1134118604644827226/Screen_Shot_2023-07-27_at_3.35.04_PM.png?ex=669f0a82&is=669db902&hm=d80de3f676a2dd3364380b3265e00f2bb3128aaedca6a9e515ae08128c87de50&"   title='Tour site Clone' description='A clone of the front end of a tour  site '/>
 
