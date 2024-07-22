@@ -32,6 +32,7 @@ function About({}: Props) {
          
          >About
          </motion.h3>
+        
         <motion.img
         initial={{
              x:-200,
@@ -45,7 +46,7 @@ function About({}: Props) {
             opacity:1,
         }}
         viewport={{once:true}}
-        src='https://cdn.discordapp.com/attachments/800718490750418967/1212867727841300571/WhatsApp_Image_2024-02-29_at_11.02.52_PM.jpeg?ex=65f36618&is=65e0f118&hm=206255d1c922cbd0589bed52616e5abaa77463f9c075d28838407ecc3edf2d37&'
+        src='https://i.postimg.cc/RFTWppPG/Screen-Shot-2024-07-16-at-4-39-39-AM.png'
         className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]'
         />
         
