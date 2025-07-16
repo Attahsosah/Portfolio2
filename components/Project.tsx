@@ -63,7 +63,7 @@ function Project({image,title,link,description,number, tech}: Props) {
       const Icon = techIconMap[t];
       return (
         <span key={t} className="flex items-center gap-1 bg-blue-100 text-blue-800 border border-blue-300 rounded-full px-3 py-1 font-semibold shadow-sm transition hover:bg-blue-200 hover:shadow-md">
-          {Icon && <Icon className="text-blue-400" title={t} />}
+          {Icon && (React.createElement(Icon, { className: "text-blue-400", title: t }))}
           {t}
         </span>
       );
