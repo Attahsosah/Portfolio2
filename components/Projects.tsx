@@ -5,7 +5,7 @@ import Project from './Project';
 const projects = [
   {
     image: "https://i.ibb.co/JWr7Wx2s/Screenshot-2025-07-16-at-6-52-42-PM.png",
-    link: 'https://ordering-app-lemon.vercel.app/#offer',
+    link: 'https://ordering-app-main.vercel.app/',
     title: 'Food Ordering App',
     description: 'This Food ordering app is a beautifully designed and customisable application where a superuser who is logged in can add and delete items. It makes use of a firebase backend to store the food information.',
     tech: ["React", "Firebase", "TailwindCSS"]
