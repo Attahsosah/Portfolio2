@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { FaReact, FaNodeJs } from 'react-icons/fa';
 import { SiNextdotjs, SiFirebase, SiTailwindcss } from 'react-icons/si';
+import type { IconType } from 'react-icons';
 
 
 type Props = {
@@ -14,7 +15,7 @@ type Props = {
 }
 
 // Map tech names to icon components
-const techIconMap: Record<string, React.ComponentType<{ className?: string; title?: string }>> = {
+const techIconMap: Record<string, IconType> = {
   'React': FaReact,
   'Next.js': SiNextdotjs,
   'Node.js': FaNodeJs,
