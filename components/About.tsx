@@ -46,14 +46,14 @@ function About({}: Props) {
             opacity:1,
         }}
         viewport={{once:true}}
-        src='https://i.postimg.cc/RFTWppPG/Screen-Shot-2024-07-16-at-4-39-39-AM.png'
+        src='https://i.ibb.co/7tVQj7z6/Profile.png'
         className='-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]'
         />
         
 
         <div className='space-y-10 px-0 md:px-10'>
             <h4 className='text-4xl font-semibold'>
-            Here is a <span className='underline decoration-[#F7AB0A]/50'>little</span>{" "} background  
+            Here is a <span className='underline decoration-[#F7AB0A]/50'>little</span>{" " } background  
             </h4>
             <p className='text-base'>Hi there! My name is Attah Sosah. Since the age of 13 , I have been obsessed with programming. Over the years, I have explored the different areas of programming. I am currently a full stack web developer . In most cases I work on web apps. I welcome you to my portfolio website </p>
         </div>

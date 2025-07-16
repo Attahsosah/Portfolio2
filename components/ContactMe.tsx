@@ -18,13 +18,17 @@ function ContactMe({ }: Props) {
     };
 
     return (
-        <div className='h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-5 sm:px-10 justify-evenly mx-auto items-center top-20'>
+        <div className='min-h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-5 sm:px-10 justify-evenly mx-auto items-center top-20 pb-24 pt-12'>
             <h3 className='sm:hidden absolute top-2 uppercase tracking-[15px] sm:tracking-[20px] sm:space-x-4 text-[#2b4970] text-xl sm:text-2xl pt-4'>Contact</h3>
             <div className='flex flex-col space-y-6 sm:space-y-10'>
-                <h4 className='text-2xl sm:text-4xl font-semibold text-center'>
-                    I am here to help. <br />
-                    <span className='decoration-[#F7AB0A]/50 underline'>Send me a message</span>
+                <h4 className='text-2xl sm:text-4xl font-extrabold text-center tracking-tight text-[#1a2a38] font-sans mb-2'>
+                    Have an Idea or Opportunity? Let’s Talk.
                 </h4>
+                <div className='flex justify-center'>
+                  <span className='text-lg sm:text-2xl italic font-semibold text-[#F7AB0A] underline decoration-[#F7AB0A]/50'>
+                    Send me a message
+                  </span>
+                </div>
 
                 <div className='space-y-6 sm:space-y-10'>
                     <div className='flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-5 justify-center'>

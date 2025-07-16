@@ -1,5 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { FaReact, FaNodeJs } from 'react-icons/fa';
+import { SiNextdotjs, SiFirebase, SiTailwindcss } from 'react-icons/si';
 
 
 type Props = {
@@ -8,9 +10,19 @@ type Props = {
     link?:string;
     number?:any;
     description?:string;
+    tech?: string[];
 }
 
-function Project({image,title,link,description,number}: Props) {
+// Map tech names to icon components
+const techIconMap: Record<string, JSX.Element> = {
+  'React': <FaReact className="text-blue-400" title="React" />,
+  'Next.js': <SiNextdotjs className="text-black" title="Next.js" />,
+  'Node.js': <FaNodeJs className="text-green-600" title="Node.js" />,
+  'Firebase': <SiFirebase className="text-yellow-500" title="Firebase" />,
+  'TailwindCSS': <SiTailwindcss className="text-teal-400" title="TailwindCSS" />,
+};
+
+function Project({image,title,link,description,number, tech}: Props) {
     const projects = [1,2]
   return (
     <div>
@@ -28,13 +40,13 @@ function Project({image,title,link,description,number}: Props) {
 
                     src={image}
                     // "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiC6fhWPvVa8NSDszxTkw_K2oti5raqeeP0w&usqp=CAU"
-                    alt=""
+                    alt={title || "Project image"}
                     
                     
                     />
 
                     <div className='space-y-10 px-0 md:px-10 max-w-6xl'> 
-                       <a href={link}> <h4  className='text-4xl font-semibold text-center'>
+                       <a href={link} target="_blank" rel="noopener noreferrer"> <h4  className='text-4xl font-semibold text-center'>
                            
                            {title}</h4>
                             </a>
@@ -44,6 +56,19 @@ function Project({image,title,link,description,number}: Props) {
 
                             </p>
                             
+                            {tech && tech.length > 0 && (
+  <div className="flex flex-wrap justify-center items-center gap-3 mt-4">
+    {tech.map((t) => (
+      <span
+        key={t}
+        className="flex items-center gap-1 bg-blue-100 text-blue-800 border border-blue-300 rounded-full px-3 py-1 font-semibold shadow-sm transition hover:bg-blue-200 hover:shadow-md"
+      >
+        {techIconMap[t] || null}
+        {t}
+      </span>
+    ))}
+  </div>
+)}
                             
                             </div>
                            
