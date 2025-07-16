@@ -14,12 +14,12 @@ type Props = {
 }
 
 // Map tech names to icon components
-const techIconMap: Record<string, JSX.Element> = {
-  'React': <FaReact className="text-blue-400" title="React" />,
-  'Next.js': <SiNextdotjs className="text-black" title="Next.js" />,
-  'Node.js': <FaNodeJs className="text-green-600" title="Node.js" />,
-  'Firebase': <SiFirebase className="text-yellow-500" title="Firebase" />,
-  'TailwindCSS': <SiTailwindcss className="text-teal-400" title="TailwindCSS" />,
+const techIconMap: Record<string, React.ComponentType<{ className?: string; title?: string }>> = {
+  'React': FaReact,
+  'Next.js': SiNextdotjs,
+  'Node.js': FaNodeJs,
+  'Firebase': SiFirebase,
+  'TailwindCSS': SiTailwindcss,
 };
 
 function Project({image,title,link,description,number, tech}: Props) {
@@ -58,15 +58,15 @@ function Project({image,title,link,description,number, tech}: Props) {
                             
                             {tech && tech.length > 0 && (
   <div className="flex flex-wrap justify-center items-center gap-3 mt-4">
-    {tech.map((t) => (
-      <span
-        key={t}
-        className="flex items-center gap-1 bg-blue-100 text-blue-800 border border-blue-300 rounded-full px-3 py-1 font-semibold shadow-sm transition hover:bg-blue-200 hover:shadow-md"
-      >
-        {techIconMap[t] || null}
-        {t}
-      </span>
-    ))}
+    {tech.map((t) => {
+      const Icon = techIconMap[t];
+      return (
+        <span key={t} className="flex items-center gap-1 bg-blue-100 text-blue-800 border border-blue-300 rounded-full px-3 py-1 font-semibold shadow-sm transition hover:bg-blue-200 hover:shadow-md">
+          {Icon && <Icon className="text-blue-400" title={t} />}
+          {t}
+        </span>
+      );
+    })}
   </div>
 )}
                             
